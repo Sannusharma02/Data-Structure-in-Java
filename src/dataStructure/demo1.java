@@ -24,6 +24,7 @@ class MySet{
             count++;
             return true;
         }
+
         Node currNode = a[index];
         Node previousNode = null;
         while(currNode!=null){
