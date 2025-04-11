@@ -25,19 +25,38 @@ class MySet{
             return true;
         }
 
-
         Node currNode = a[index];
-        Node previousNode = null;
-        while(currNode!=null){
+        while(true){
             if(currNode.num == num){
                 return false;
             }
-            previousNode = currNode;
+            if(currNode.next == null){
+                currNode.next = new Node(num, null);
+                count++;
+                return true;
+            }
             currNode = currNode.next;
         }
-        previousNode = new Node(num, null);
-        count++;
-        return true;
+    }
+
+    public int size(){
+        return count;
+    }
+
+    public String toString() {
+        if (size()==0) return "[]";
+        StringBuilder str = new StringBuilder("[");
+        for (Node node : a) {
+            Node first = node;
+            if (node == null) continue;
+            while (first != null) {
+                str.append(first.num).append(", ");
+                first = first.next;
+            }
+        }
+        str = new StringBuilder(str.substring(0, str.length() - 2));
+        str.append("]");
+        return str.toString();
     }
 }
 
@@ -45,8 +64,10 @@ public class demo1 {
 
     public static void main(String[] args) {
         MySet set = new MySet();
-        set.add(26);
-        set.add(42);
-        System.out.println(set);
+        System.out.println(set.add(26));
+        System.out.println(set.add(42));
+        System.out.println(set.add(58));
+        System.out.println(set.add(1));
+        System.out.println("size = "+set.size()+", set = "+ set);
     }
 }
