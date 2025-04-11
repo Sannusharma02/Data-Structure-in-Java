@@ -10,7 +10,7 @@ class Node{
 }
 
 class MySet{
-    private Node[] a = new Node[16];
+    private final Node[] a = new Node[16];
     private int count = 0;
 
     private int hash(int num){
@@ -67,6 +67,7 @@ public class demo1 {
         System.out.println(set.add(26));
         System.out.println(set.add(42));
         System.out.println(set.add(58));
+        System.out.println(set.add(1));
         System.out.println(set.add(1));
         System.out.println("size = "+set.size()+", set = "+ set);
     }
