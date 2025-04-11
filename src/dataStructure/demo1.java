@@ -28,7 +28,7 @@ class MySet{
 
         Node currNode = a[index];
         Node previousNode = null;
-        while(currNode!=null){
+        while(true){
             if(currNode.num == num){
                 return false;
             }
