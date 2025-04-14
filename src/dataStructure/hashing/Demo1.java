@@ -1,4 +1,4 @@
-package dataStructure;
+package dataStructure.hashing;
 
 class Node{
     int num;
@@ -60,7 +60,7 @@ class MySet{
     }
 }
 
-public class demo1 {
+public class Demo1 {
 
     public static void main(String[] args) {
         MySet set = new MySet();
