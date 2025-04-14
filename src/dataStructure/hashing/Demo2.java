@@ -103,6 +103,7 @@ public class Demo2 {
         mySet1.add(new String("ab"));
         mySet1.add(new String("cd"));
         mySet1.add(new String("ab"));
+
         System.out.println(mySet1);  // Should now print [ab, cd]
     }
 
