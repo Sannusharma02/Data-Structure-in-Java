@@ -15,7 +15,7 @@ class MySet1 {
      private int count = 0;
 
     private int hash(Object obj) {
-        return obj.hashCode() % 16;
+        return Math.abs(obj.hashCode()) % 16;
     }
 
      public boolean add(Object e) {
