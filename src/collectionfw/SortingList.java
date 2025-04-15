@@ -2,6 +2,7 @@ package collectionfw;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Iterator;
 
 public class SortingList {
 
@@ -15,9 +16,15 @@ public class SortingList {
         a.add("nodejs");
         a.add("angularjs");
 
-        Collections.sort(a);
-        for(Object obj:a) {
-            System.out.println(obj);
+//        Collections.sort(a);
+//        for(Object obj:a) {
+//            System.out.println(obj);
+//        }
+
+        Iterator<String> it = null;
+        while (it.hasNext()) {
+            System.out.println(it.next());
         }
+
     }
 }

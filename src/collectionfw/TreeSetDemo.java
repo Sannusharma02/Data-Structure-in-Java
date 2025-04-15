@@ -18,8 +18,19 @@ public class TreeSetDemo {
 //        System.out.println(s.last());
 
 //        System.out.println(s.pollFirst());
+        System.out.println("============================");
         SortedSet<String> s1 =s.headSet("n");  //wont print node but till c
         for (Object o : s1) {
+            System.out.println(o);
+        }
+        System.out.println("============================");
+        SortedSet<String> s2 =s.tailSet("n");
+        for (Object o : s2) {
+            System.out.println(o);
+        }
+        System.out.println("============================");
+        SortedSet<String> s3 =s.subSet("c","p");
+        for (Object o : s3) {
             System.out.println(o);
         }
 
