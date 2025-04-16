@@ -1,9 +1,13 @@
 package dataStructure.sorting;
 
+import java.util.Arrays;
+
 public class SelectionSort {
 
     public static void main(String[] args) {
-
+        int[] a = {3, 8, 4, 7, 1, 8, 2};
+        SelectionSort.sort(a);
+        System.out.println(Arrays.toString(a));
     }
 
     static void sort(int[] arr) {
