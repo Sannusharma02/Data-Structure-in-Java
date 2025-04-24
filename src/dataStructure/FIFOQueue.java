@@ -2,11 +2,11 @@ package dataStructure;
 
 public class FIFOQueue {
 
-//    private MyArrayList a;
-//
-//    FIFOQueue(){
-//        a=new MyArrayList();
-//
-//    }
+    private MyArrayList a;
+
+    FIFOQueue(){
+        a=new MyArrayList();
+
+    }
 
 }
